@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG Session Test Automation Suite">
+	<test name="Different TestNG Feature Test">
+	   
+		<classes>
+			<class name="testNG.ExceptionTimeOutTest" />
+			<class name="testNG.GoogleTest" />
+			<class name="testNG.GoogleTitleTest" />
+			<class name="testNG.InvocationCountTest" />
+			<class name="testNG.TestAnnotations" />
+			<class name="testNG.TestDependencyUsingFB" />
+			<class name="testNG.TestGrouping" />
+			<class name="testNG.TestGroupingNew" />
+			<class name="testNG.TestNGAssertion" />
+			<class name="testNG.TestNGBasics" />
+			<class name="testNG.TestNGFeatures" />
+			<class name="testNG.TestTestNGAttributes" />
+		</classes>
+	</test>
+</suite>
