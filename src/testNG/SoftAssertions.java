@@ -4,9 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-
-
-
 public class SoftAssertions {
 	 
 SoftAssert softAssert = new SoftAssert();	
@@ -18,7 +15,9 @@ public void test1() {
 SoftAssert softAssert1 = new SoftAssert();
 	System.out.println("Open Browser");
 	
-	Assert.assertEquals(true, true);
+	Assert.assertEquals(true, true,"Title not matching");
+	Assert.assertTrue(true);
+	
 	
 	System.out.println("Enter username");
 	System.out.println("Enter password");

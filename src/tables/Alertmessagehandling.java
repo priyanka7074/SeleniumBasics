@@ -13,7 +13,7 @@ public class Alertmessagehandling {
 
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		
-		driver.findElement(By.name("proceed")).click();
+		driver.findElement(By.name("proceed")).click(); //click on go button
 		
 		Alert alert=driver.switchTo().alert();
 		

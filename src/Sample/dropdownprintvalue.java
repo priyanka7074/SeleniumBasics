@@ -16,12 +16,9 @@ public class dropdownprintvalue {
 
 		driver.get("http://newtours.demoaut.com/mercurywelcome.php");
 		
-		WebElement w1=driver.findElement(By.linkText("REGISTER"));
-		w1.click();
+        driver.findElement(By.linkText("REGISTER")).click();
 		
-		WebElement w2=driver.findElement(By.name("country"));
-		
-		Select s1=new Select(w2);
+		Select s1=new Select(driver.findElement(By.name("country")));
 		
 		List<WebElement> count=s1.getOptions();
 		

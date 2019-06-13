@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+//Session 15
 public class GoogleSearchTest {
 
 	public static void main(String[] args) {
@@ -25,7 +26,7 @@ public class GoogleSearchTest {
 		driver.findElement(By.name("q")).sendKeys("testing");
 
 		List<WebElement> list = driver
-				.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='sbl1']"));
+				.findElements(By.xpath("//ul[@role='listbox']//li/descendant::div[@class='sbl1']"));//descendant -- means the child of li
 		System.out.println("Total no of suggestions in search box:===" + list.size());
 
 		for (int i = 0; i <= list.size(); i++) {

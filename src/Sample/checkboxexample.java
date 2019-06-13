@@ -15,7 +15,7 @@ public class checkboxexample {
 
 		driver.navigate().to("C:\\Users\\welcome\\Desktop\\Sample.html");
 
-		List<WebElement> cb=driver.findElements(By.name("b5"));
+		List<WebElement> cb=driver.findElements(By.name("b5")); //Inter checkbox
 
 
 		boolean b=false;

@@ -2,7 +2,6 @@ package Sample;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -14,12 +13,9 @@ public class dropdownbyindex {
 
 		driver.get("http://newtours.demoaut.com/mercurywelcome.php");
 		
-		WebElement w1=driver.findElement(By.linkText("REGISTER"));
-		w1.click();
+		driver.findElement(By.linkText("REGISTER")).click();
 		
-		WebElement w2=driver.findElement(By.name("country"));
-		
-		Select s1=new Select(w2);
+		Select s1=new Select(driver.findElement(By.name("country")));
 		
 		s1.selectByIndex(6);
 

@@ -43,6 +43,7 @@ public class halfEbayTest {
 	public void halfEbayRegTestPage(String firstname, String lastname, String emailAddress, String address1, String address2, String city,String state, String zipcode) {
 		
 		//enter data
+		
 		//driver.findElement(By.xpath("//input[@name='firstName']")).clear();
 		driver.findElement(By.name("firstName")).sendKeys(firstname);
 		
@@ -66,8 +67,6 @@ public class halfEbayTest {
 		
 		//driver.findElement(By.xpath("//input[@name='postalCode']")).clear();
 		driver.findElement(By.xpath("//input[@name='postalCode']")).sendKeys(zipcode);
-		
-		
 	}
 	
 	 @AfterMethod

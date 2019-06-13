@@ -1,0 +1,1 @@
+//div[div[h2[a[span[@class='a-size-base-plus a-color-base a-text-normal' and contains(text(),'Hetohec Sport Baseball Shoes Knitted Fashion Outdoor Sneakers Lightweight Gym Athletic Shoe for Men Trail Workout')]]]]]/div[@class='a-section a-spacing-none a-spacing-top-micro']/div/span/span/a/i/span

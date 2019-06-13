@@ -37,9 +37,7 @@ public class CustomXpath {
 		//Method 4 Xpath for links
 		
 		driver.findElement(By.xpath("//a[contains(text(),' Daily Deals')]")).click();
-		
-		
-
+	
 	}
 
 }

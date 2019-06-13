@@ -9,7 +9,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 public class HtmlUnitDriverConcept {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.firefox.marionette","C:\\selenium\\geckodriver\\geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver_win32\\chromedriver.exe");
 		//WebDriver driver = new FirefoxDriver();
 		
 		//Need to add the htmlunitdriver jar file externally

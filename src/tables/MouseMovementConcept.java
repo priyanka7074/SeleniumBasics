@@ -4,14 +4,18 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class MouseMovementConcept {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.firefox.marionette","C:\\selenium\\geckodriver\\geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+//		System.setProperty("webdriver.firefox.marionette","C:\\selenium\\geckodriver\\geckodriver.exe");
+//		WebDriver driver = new FirefoxDriver();
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

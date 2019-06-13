@@ -4,13 +4,16 @@ import java.util.Iterator;
 import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HandleWindowPopup {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.firefox.marionette","C:\\selenium\\geckodriver\\geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+//		System.setProperty("webdriver.firefox.marionette","C:\\selenium\\geckodriver\\geckodriver.exe");
+//		WebDriver driver = new FirefoxDriver();
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		
 		driver.get("http://www.popuptest.com/goodpopups.html");
 		
