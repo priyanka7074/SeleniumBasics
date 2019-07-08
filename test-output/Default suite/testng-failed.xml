@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.dataDriven.halfEbayTest">
+      <class name="advanceSeleniumConcepts.DownloadFileConcept">
         <methods>
-          <include name="setup"/>
-          <include name="halfEbayRegTestPage" invocation-numbers="0 1 2 3"/>
+          <include name="tearDown"/>
+          <include name="downloadFileTest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.dataDriven.halfEbayTest -->
+      </class> <!-- advanceSeleniumConcepts.DownloadFileConcept -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
